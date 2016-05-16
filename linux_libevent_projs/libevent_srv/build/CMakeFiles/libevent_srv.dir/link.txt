@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/libevent_srv.dir/libevent_srv.c.o  -o libevent_srv  -L/usr/local/libevent/lib -rdynamic -levent -Wl,-rpath,/usr/local/libevent/lib 
