@@ -1,0 +1,9 @@
+---- m_isock Matches (8 in 2 files) ----
+Epollserver.cpp:	close(m_isock);
+Epollserver.cpp:	m_isock = socket(AF_INET, SOCK_STREAM, 0);
+Epollserver.cpp:	if (0 > m_isock){
+Epollserver.cpp:	setsockopt(m_isock, SOL_SOCKET, SO_REUSEADDR, &ireuseadd_on, sizeof(ireuseadd_on));
+Epollserver.cpp:	if (bind(m_isock, (sockaddr*)&listen_addr, sizeof(listen_addr)) != 0){
+Epollserver.cpp:	if (listen(m_isock, 20) < 0){
+Epollserver.cpp:		int client_sock = accept(pEpollSrv->m_isock, 
+Epollserver.h:		int m_isock;
