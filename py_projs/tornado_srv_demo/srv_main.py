@@ -9,6 +9,14 @@ class SaySomethingHandler(tornado.web.RequestHandler):
         self.write(rsp_msg)
         print(rsp_msg)
 
+    def post(self):
+        rsp_msg = "{0} what you say is {1}\n".format(
+            utils.get_cur_time_str(),
+            self.get_argument("message"))
+        self.write(rsp_msg)
+        print(rsp_msg)
+
+
 def make_app():
     return tornado.web.Application([
         (r"/saysomething", SaySomethingHandler),
